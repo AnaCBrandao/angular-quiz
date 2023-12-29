@@ -1,0 +1,70 @@
+{
+    "title":"Qual jojo você seria ?",
+    "questions":[
+      {
+        "id":1,
+        "question": "Qual das caracteristicas mais combinam com voce?",
+        "options":[
+          {"id": 1, "name":"Esperançoso", "alias":"A"},
+          {"id": 2, "name":"Calmo", "alias":"B"},
+          {"id": 3, "name":"Paciente", "alias":"A"},
+          {"id": 4, "name":"Inteligente", "alias":"B"},
+          {"id": 5, "name":"Cuidadoso", "alias":"A"}
+        ]
+      },
+      {
+        "id":2,
+        "question": "Qual poder de stand mais combina com voce?",
+        "options":[
+          {"id": 1, "name":"Criação de vida", "alias":"A"},
+          {"id": 2, "name":"Temporal", "alias":"A"},
+          {"id": 3, "name":"Furtivo", "alias":"B"},
+          {"id": 4, "name":"Prefiro Hamon", "alias":"B"}
+        ]
+      },
+      {
+        "id":3,
+        "question": "Qual seu pecado?",
+        "options":[
+          {"id": 1, "name":"Luxuria", "alias":"B"},
+          {"id": 2, "name":"Orgulho", "alias":"A"},
+          {"id": 3, "name":"Ira", "alias":"A"},
+          {"id": 4, "name":"Ganancia", "alias":"B"}
+        ]
+      },
+      {
+        "id":4,
+        "question": "Qual sua parte favorita ?",
+        "options":[
+            {"id": 1, "name":"1 - Phantom Blood", "alias":"B"},
+            {"id": 2, "name":"4 - Diamond is Unbreakable", "alias":"A"},
+            {"id": 3, "name":"3 - Stardust Crusaders", "alias":"A"},
+            {"id": 4, "name":"2 - Battle Tendency", "alias":"B"}
+        ]
+      },
+      {
+        "id":5,
+        "question": "Qual sua cor favorita ?",
+        "options":[
+            {"id": 1, "name":"Roxo", "alias":"B"},
+            {"id": 2, "name":"Verde", "alias":"A"},
+            {"id": 3, "name":"Azul", "alias":"A"},
+            {"id": 4, "name":"Preto", "alias":"B"}
+        ]
+      },
+      {
+        "id":6,
+        "question": "Qual seu brojo favorito ?",
+        "options":[
+            {"id": 1, "name":"Noryaki Kakyoin", "alias":"B"},
+            {"id": 2, "name":"Ceasar Zepelli", "alias":"A"},
+            {"id": 3, "name":"Speedwagon", "alias":"A"},
+            {"id": 4, "name":"Yasuho Hirose", "alias":"B"}
+        ]
+      }
+    ],
+    "results":{
+      "A": "Você muito provavelmente seria um super vilão!",
+      "B": "Você muito provavelmente seria um super Herói!"
+    }
+  }
