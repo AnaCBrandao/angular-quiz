@@ -68,5 +68,11 @@
       "B": "Você seria Joseph Joestar!",
       "C": "Você seria Jotaro Kujo",
       "D": "Você seria Josuke Higashikata!"
+    },
+    "images":{
+      "A": "https://i.pinimg.com/736x/c9/3f/11/c93f11372c5bde660e7fd33ec1f1ce1c.jpg",
+      "B": "https://static.tvtropes.org/pmwiki/pub/images/41a8bb16_eecd_4de0_9f43_e8e08b7d4495.jpeg",
+      "C": "https://media.tenor.com/XPVF_7XCY_cAAAAM/jotaro-kujo.gif",
+      "D": "https://i.pinimg.com/originals/ad/45/0f/ad450f5fc39516acd3208625ea1daa99.jpg"
     }
   }

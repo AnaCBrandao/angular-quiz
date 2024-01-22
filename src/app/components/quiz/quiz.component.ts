@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
 import quiz_questions from '../../../assets/data/quiz_questions.json';
+import { Location } from '@angular/common';
+
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
@@ -8,20 +9,22 @@ import quiz_questions from '../../../assets/data/quiz_questions.json';
 })
 export class QuizComponent implements OnInit {
   
-  title: string ="";
+  title:string ="";
 
   questions:any 
   questionSelected: any
 
   answers:string[] = [];
-  asnwerSelected: string = "";
+  answerSelected: string = "";
+  answerImg: string = "";
 
   questionIndex:number = 0;
   questionMaxIndex:number = 0;
 
   finished:boolean = false;
 
-  constructor() { }
+  
+  constructor(private location: Location) { }
 
   ngOnInit(): void {
     if(quiz_questions){
@@ -38,8 +41,11 @@ export class QuizComponent implements OnInit {
 
   playerChoose(value:string){
     this.answers.push(value);
+    this.nextStep();
 
-    //console.log(value);
+
+    console.log(value);
+    console.log(this.answers);
   }
 
   async nextStep(){
@@ -48,8 +54,31 @@ export class QuizComponent implements OnInit {
     if(this.questionMaxIndex > this.questionIndex){
       this.questionSelected = this.questions[this.questionIndex];
     }else{
-      this.finished = true;
+      const finalAnswer:string = await this.checkResults(this.answers)
+      this.finished = true
+      this.answerSelected = quiz_questions.results[finalAnswer as keyof typeof quiz_questions.results ]
+      this.answerImg = quiz_questions.images[finalAnswer as keyof typeof quiz_questions.results ]
     }
+  }
+
+  async checkResults(answers:string[]){
+   
+    const result = answers.reduce((previous, current, i, arr) => {
+      if(
+        arr.filter(item => item === previous).length > 
+        arr.filter(item => item === current).length
+      ){
+        return previous;
+      }else{
+        return current;
+      }
+    });
+
+    return result
+  }
+
+  playAgain(){
+   location.reload();
   }
 
 }
