@@ -1,13 +1,10 @@
 # Angular Jojo Quiz
 
 <div align="center">
-  <img width="280px" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/JoJo%27s_Bizarre_Adventure_logo.png"/>
-</div>
-<div align="center">
     <p>A JoJo's Bizarre Adventure quiz to find out who you are in the plot.</p>
   <p>Using Angular to create a single page responsive application.</p>
-<a href="https://anacbrandao.github.io/jojo-quiz/">Open in GithubPages</a>
-  <img src=""/>
+  <p><a href="https://anacbrandao.github.io/jojo-quiz/">Open in GithubPages</a></p>
+  <img src="https://media.discordapp.net/attachments/767910421025521665/1201598641870225458/Screenshot_2024-01-29_at_15-42-42_AngularQuiz.png"/>
 </div>
 
 ## Features
